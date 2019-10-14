@@ -1,0 +1,35 @@
+body{
+    background-color: gray;
+}
+#container{
+    background-color: blue;
+    width: 900px;
+    height: 1200px;
+}
+#header{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+img{
+    width: 100px;
+    height: 200px;
+    float:right;
+}
+
+#left-sideBar{
+    clear: both;
+    padding-top: 20px;
+    width: 200px;
+    background-color: azure;
+
+}
+ul li{
+    padding-top: 20px;
+    font-size: 20px;
+    list-style-type: none;
+    
+}
+a{text-decoration:none}
