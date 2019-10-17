@@ -9,19 +9,15 @@
     request.open("GET",'./viewer/'+fragmentID +'.html');
 request.send(null);
 
-   /*  partials={
-        aboutme:'this is aboutme',
-        contact:'this is contact',
-        projects:'this is projects',
-        feedback:'this is feedback'
-        };
-    call(partials[fragments]); */
 }
 window.addEventListener('hashchange',navigate)
 function navigate () {
 
     const contentDiv =document.getElementById('content');
     fragmentID=location.hash.substr(1);
+     if(!location.hash){
+        fragmentID='aboutme'
+    }
     getContent(fragmentID,(content)=>{
         contentDiv.innerHTML=content;
     })}
