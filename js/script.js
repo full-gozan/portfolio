@@ -6,8 +6,7 @@
         call(request.responseText);
         
     };
-    request.open("GET",'./viewer/aboutme.html');
-    //request.open("GET",fragmentID +'.html');
+    request.open("GET",'./viewer/'+fragmentID +'.html');
 request.send(null);
 
    /*  partials={
