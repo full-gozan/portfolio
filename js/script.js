@@ -1,15 +1,4 @@
- function  getContent(fragmentID,call) {
-    let request = new XMLHttpRequest();
-    request.onload=function(){
-        console.log(request.responseText);
-        
-        call(request.responseText);
-        
-    };
-    request.open("GET",'./viewer/'+fragmentID +'.html');
-request.send(null);
-
-}
+ 
 window.addEventListener('hashchange',navigate)
 function navigate () {
 
@@ -18,7 +7,7 @@ function navigate () {
      if(!location.hash){
         fragmentID='aboutme'
     }
-    getContent(fragmentID,(content)=>{
+    fetchData.getContent(fragmentID,(content)=>{
         contentDiv.innerHTML=content;
     })}
 
