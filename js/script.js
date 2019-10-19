@@ -1,4 +1,4 @@
-/*  function  getContent(fragmentID,call) {
+function getContent(fragmentID,call) {
     let request = new XMLHttpRequest();
     request.onload=function(){
         console.log(request.responseText);
@@ -6,10 +6,13 @@
         call(request.responseText);
         
     };
-    request.open("GET",'./viewer/'+fragmentID +'.html');
+    //request.open("GET",'./viewer/'+fragmentID +'.html');
+    request.open("GET",'https://full-gozan.github.io/portfolio/viewer/'+fragmentID+'.html');
+
 request.send(null);
 
-} 
+   
+}
 window.addEventListener('hashchange',navigate)
 function navigate () {
 
@@ -18,10 +21,7 @@ function navigate () {
      if(!location.hash){
         fragmentID='aboutme'
     }
-    fetchData.getContent(fragmentID,(content)=>{
+    getContent(fragmentID,(content)=>{
         contentDiv.innerHTML=content;
     })}
-    navigate(); */
-
-
-        fetchData.logdata();
+    navigate(); 
