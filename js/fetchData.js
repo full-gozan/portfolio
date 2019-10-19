@@ -1,3 +1,5 @@
+'use strict';
+
 class fetchData{
 
     static getContent(fragmentID,call) {
@@ -12,5 +14,10 @@ class fetchData{
     request.send(null);
     
        
+    }
+    static logdata(){
+        console.log('wow ');
+        
+
     }
 }
