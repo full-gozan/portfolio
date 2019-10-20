@@ -6,8 +6,8 @@ function getContent(fragmentID,call) {
         call(request.responseText);
         
     };
-    //request.open("GET",'./viewer/'+fragmentID +'.html');
-    request.open("GET",'https://full-gozan.github.io/portfolio/viewer/'+fragmentID+'.html');
+    request.open("GET",'./viewer/'+fragmentID +'.html');
+    //request.open("GET",'https://full-gozan.github.io/portfolio/viewer/'+fragmentID+'.html');
 
 request.send(null);
 
