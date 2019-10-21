@@ -8,6 +8,10 @@ function getContent(fragmentID,call) {
     };
     //request.open("GET",'./viewer/'+fragmentID +'.html');
     request.open("GET",'https://full-gozan.github.io/portfolio/viewer/'+fragmentID+'.html');
+<<<<<<< HEAD
+=======
+
+>>>>>>> 958c5d817d8301a4887e76cb012aa0eaa51af851
 request.send(null);
 
    
