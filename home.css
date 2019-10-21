@@ -30,6 +30,7 @@
     list-style-type: none;
     padding: 0;
     text-decoration: none;
+    position: fixed;
 
   }
   nav ul li{font-size: 26px;}
@@ -43,6 +44,11 @@
     background-color: #f1f1f1;
     height: 300px; 
   }
+main #content {
+  overflow-y: auto;
+  height: 1200px;
+
+}
   
 
   /* Style the footer */
