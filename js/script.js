@@ -9,8 +9,6 @@ function getContent(fragmentID, call) {
     //request.open("GET",'./viewer/'+fragmentID +'.html');
     request.open("GET", 'https://full-gozan.github.io/portfolio/viewer/' + fragmentID + '.html');
     request.send(null);
-
-
 }
 window.addEventListener('hashchange', navigate)
 
