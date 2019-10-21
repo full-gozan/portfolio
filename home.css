@@ -8,21 +8,30 @@
   
   /* Style the header */
   header {
+    margin-left: 30%;
       display: flex;
       justify-content: space-around;
     background-color: #666;
-    padding: 30px;
     font-size: 20px;
     color: white;
+  }
+  select{
+    float: left;
   }
   
   /* Create two columns/boxes that floats next to each other */
   nav {
     float: left;
     width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 100%; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
+    margin-top: 0%;
+    position: fixed;
+    overflow: auto;
+
+
+    
   }
   
   /* Style the list inside the menu */
@@ -30,7 +39,7 @@
     list-style-type: none;
     padding: 0;
     text-decoration: none;
-    position: fixed;
+
 
   }
   nav ul li{font-size: 26px;}
@@ -38,26 +47,19 @@
   nav ul li a{text-decoration: none;} 
   
   main {
-    float: left;
+    float: right;
     padding: 20px;
+
     width: 70%;
     background-color: #f1f1f1;
-    height: 300px; 
+    height: auto; 
   }
 main #content {
   overflow-y: auto;
   height: 1200px;
 
 }
-  
 
-  /* Style the footer */
-  footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
   @media (max-width: 600px) {
