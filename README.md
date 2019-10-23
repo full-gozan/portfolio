@@ -1,6 +1,6 @@
 # Online Resume
 ### The purpose 
-* Create online resume and make it easier to view, modify,and share**
+* Create online resume and make it easier to view, modify,and share.
 
 ### Links
 * [home page](https://full-gozan.github.io/portfolio/home.html)
