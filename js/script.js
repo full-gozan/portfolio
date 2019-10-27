@@ -1,9 +1,9 @@
-function getContent(fragmentID, call) {
+function getContent(fragmentID, callFunction) {
     let request = new XMLHttpRequest();
     request.onload = function () {
         console.log(request.responseText);
 
-        call(request.responseText);
+        callFunction(request.responseText);
 
     };
     //request.open("GET",'./viewer/'+fragmentID +'.html');
