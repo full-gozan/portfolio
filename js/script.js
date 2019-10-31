@@ -15,10 +15,6 @@ function navigate() {
 
     const contentDiv = document.getElementById('content');
     fragmentID = location.hash.substr(1);
-    const currrentPage = document.getElementById('fragmentID');
-    const aboutme=document.getElementById('aboutme');
-        currrentPage.classList.add('active')
-        aboutme.classList.add('aboutme');
 
 
 
