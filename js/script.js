@@ -15,13 +15,9 @@ function navigate() {
 
     const contentDiv = document.getElementById('content');
     fragmentID = location.hash.substr(1);
-
-
-
     if (!location.hash) {
         fragmentID = 'aboutme'
     }
-
     getContent(fragmentID, (content) => {
         contentDiv.innerHTML = content;
     })
