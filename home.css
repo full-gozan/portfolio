@@ -17,24 +17,28 @@
   }
   select{
     float: left;
+
   }
+
   
-  /* Create two columns/boxes that floats next to each other */
   nav {
+    width: 20%;
     float: left;
-    width: 30%;
-    height: 100%; /* only for demonstration, should be removed */
+    height: 100%; 
     background: #ccc;
     padding: 20px;
     margin-top: 0%;
     position: fixed;
     overflow: auto;
-
-
-    
+    background-color: rgb(149, 214, 132);
   }
+  nav img{
+    width: 60%; 
+    padding: 20px;
+    margin-left: 20%;
+    border-radius: 50%;
+    }
   
-  /* Style the list inside the menu */
   nav ul {
     list-style-type: none;
     padding: 0;
@@ -43,17 +47,26 @@
 
   }
   nav ul li{font-size: 26px;
-    margin-top: 22px;
+    margin-top: 22px; 
+       text-align: center;
+
 }
       
-  nav ul li a{text-decoration: none;} 
+  nav ul li a{text-decoration: none;
+  
+  } 
+  nav ul li a:hover{text-decoration: none;
+    color: black;
+  
+  } 
+
 
   
   main {
     float: right;
     padding: 20px;
 
-    width: 70%;
+    width: 80%;
     background-color: #f1f1f1;
     height: auto; 
   }
