@@ -16,13 +16,18 @@ function navigate() {
     const contentDiv = document.getElementById('content');
     fragmentID = location.hash.substr(1);
     const currrentPage = document.getElementById('fragmentID');
+    const aboutme=document.getElementById('aboutme');
+        currrentPage.classList.add('active')
+        aboutme.classList.add('aboutme');
+
+
 
     if (!location.hash) {
         fragmentID = 'aboutme'
     }
+
     getContent(fragmentID, (content) => {
         contentDiv.innerHTML = content;
-        currrentPage.classList.add('active')
     })
 }
 navigate();
