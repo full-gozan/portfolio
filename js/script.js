@@ -23,3 +23,21 @@ function navigate() {
     })
 }
 navigate();
+// toggle the nav icon by showing and disapearing the nav
+const navToggle=()=>{
+    const menu = document.getElementsByClassName('wrap')[0];
+const navBar = document.getElementsByClassName('navBar')[0];
+
+
+menu.addEventListener('click',function(){
+
+    navBar.classList.add('click')
+    
+
+})
+}
+navToggle();
+
+
+
+
