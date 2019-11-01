@@ -23,17 +23,31 @@ function navigate() {
     })
 }
 navigate();
+
 // toggle the nav icon by showing and disapearing the nav
 const navToggle=()=>{
     const menu = document.getElementsByClassName('wrap')[0];
 const navBar = document.getElementsByClassName('navBar')[0];
+const nav = document.getElementById('nav')
+const main =document.getElementById('main')
+
+let isVisible=false;
+const hideNav=()=>{
+    navBar.classList.add('click');
+    nav.style.width='5%';
+    main.style.width='95%'
 
 
+}
+const showNav=()=>{
+      navBar.classList.remove('click')
+        nav.style.width='20%';
+        main.style.width='80%'
+}
 menu.addEventListener('click',function(){
-
-    navBar.classList.add('click')
+    isVisible=!isVisible;
+!isVisible? showNav():hideNav();
     
-
 })
 }
 navToggle();

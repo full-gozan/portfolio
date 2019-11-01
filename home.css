@@ -25,14 +25,13 @@
 
   }
 
-  
+ 
   nav {
     width: 280px;
     float: left;
     height: 100%; 
     background: #ccc;
-    padding: 20px;
-    margin-top: 0%;
+    padding: 10px;
     position: fixed;
     background-color: rgb(149, 214, 132);
 
@@ -40,8 +39,6 @@
   }
   .click{
 display: none;
-  }
-  .navBar{
     
   }
   nav img{
@@ -79,7 +76,6 @@ display: none;
   main {
     float: right;
     padding: 20px;
-
     width: 80%;
     background-color: #f1f1f1;
     height: auto; 
@@ -89,35 +85,3 @@ main #content {
   height: 1200px;
 
 }
-@media screen and (min-width:600px) and (max-width:1300px) {
-  nav , .links, nav img {
-background-color: aquamarine; 
-display: none;
-width: 20px;
- }
- main{
-   width: 100%;
- }
-  
-  }
-  @media (max-width: 600px) {
-    body{
-      display: grid;
-      grid-template-columns: 100%;
-    }
-    nav, main {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    header{
-      position: fixed;
-    }
-    main{
-      margin-top: 250px;
-    }
-    nav ul {
-display: flex;
-justify-content: space-around;    }
-    
-  }
