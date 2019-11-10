@@ -20,7 +20,7 @@ var firebaseConfig = {
 
   let button = document.getElementById('submitbtn');
 
-function storeFeedbackData() {
+const storeFeedbackData=()=> {
 
 const name=document.getElementById("field1").value;
 const email=fieldsGetData('field2');
