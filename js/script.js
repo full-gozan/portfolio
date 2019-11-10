@@ -28,22 +28,28 @@ navigate();
 const navToggle=()=>{
     const menu = document.getElementsByClassName('wrap')[0];
 const navBar = document.getElementsByClassName('navBar')[0];
+const links = document.getElementsByClassName('links')[0];
 const nav = document.getElementById('nav')
 const main =document.getElementById('main')
+
 
 let isVisible=false;
 const hideNav=()=>{
     navBar.classList.add('click');
-    nav.style.width='5%';
-    main.style.width='95%'
-
-
+    nav.style.height='auto';
 }
 const showNav=()=>{
       navBar.classList.remove('click')
-        nav.style.width='20%';
-        main.style.width='80%'
+        nav.style.height='auto';
 }
+links.addEventListener('click',function(){
+    if (window.innerWidth<800){
+            isVisible=!isVisible;
+!isVisible? showNav():hideNav();
+    }
+
+    
+})
 menu.addEventListener('click',function(){
     isVisible=!isVisible;
 !isVisible? showNav():hideNav();

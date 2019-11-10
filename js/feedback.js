@@ -14,10 +14,11 @@ var firebaseConfig = {
   
   var messagesRef = firebase.database().ref("portfolio-c859c");
 
- function fieldsGetData(name){return document.getElementById(name).value}
+ function fieldsGetData(name){
+   return document.getElementById(name).value;
+  };
+
   let button = document.getElementById('submitbtn');
-  button.addEventListener('submit',storeFeedbackData)
-  button.addEventListener('click',storeFeedbackData) 
 
 function storeFeedbackData() {
 
@@ -40,5 +41,7 @@ function saveMessage(name, company, email, website, subject,text){
       text:text
     });
   }
+  button.addEventListener('click',storeFeedbackData);
+
 
 
