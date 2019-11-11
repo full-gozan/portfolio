@@ -42,11 +42,13 @@ const showNav=()=>{
       navBar.classList.remove('click')
         nav.style.height='auto';
 }
+
 links.addEventListener('click',function(){
     if (window.innerWidth<800){
             isVisible=!isVisible;
 !isVisible? showNav():hideNav();
     }
+
 
     
 })
@@ -57,6 +59,7 @@ menu.addEventListener('click',function(){
 })
 }
 navToggle();
+
 
 
 
