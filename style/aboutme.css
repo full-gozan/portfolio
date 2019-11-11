@@ -1,19 +1,24 @@
-body{
-    background-image:url(./pic/feedback-form-background2.jpg)
+#about-me-selection{
+}
+#profile{
+    float: left;
+    height: 100%;
+    width: 350px;
+    padding-right: 15px;
+}
+#profile img{
+    height: 500px;width: 300px;
 }
 #bundle-1{
-    float: left;
-    width: 30%;
+    padding-top: 12px;
+
 }
-#bundle-2{
-    float: right;
-}
+
 #name{
     text-transform: uppercase;
     font-weight: 700;
 }
-#social-media a{
-    background-color:rgb(211, 236, 236);
-    color: rgb(51, 47, 47);
-    padding: 3px;
+#social-media a img{
+margin: 12px;
 }
+
