@@ -1,6 +1,6 @@
-#about-me-selection{
-}
+
 #profile{
+    margin-left: 12px;
     float: left;
     height: 100%;
     width: 350px;
@@ -21,4 +21,9 @@
 #social-media a img{
 margin: 12px;
 }
+@media screen and(max-width:600px){
+    #profile ,#about-me-selection{
+        clear: both;
+    }
+    }
 

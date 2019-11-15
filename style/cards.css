@@ -1,0 +1,32 @@
+.card-body{
+    padding: 2%;
+    margin-bottom: 12px;
+    border: 5px solid ;
+    width: 55%;
+    border-radius: 25px;
+
+}
+.card-title{
+    padding-left: 12px;
+    font-size: larger;
+    font-family: sans-serif;
+}
+.card-duration{
+    padding-left: 23px;
+    font-size: medium;
+}
+.card-text{
+    padding-left: 28px;
+}
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
