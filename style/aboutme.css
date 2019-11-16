@@ -1,6 +1,5 @@
 
 #profile{
-    margin-left: 12px;
     float: left;
     height: 100%;
     width: 350px;
@@ -22,8 +21,9 @@
 margin: 12px;
 }
 @media screen and(max-width:600px){
-    #profile ,#about-me-selection{
+    #profile {
         clear: both;
+        width: 100%;
     }
     }
 
