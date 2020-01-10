@@ -3,7 +3,7 @@
 * Create online resume and make it easier to view, modify,and share.
 
 ### Demo
-* [home page](https://full-gozan.github.io/portfolio/home.html)
+* [Home page](https://full-gozan.github.io/portfolio/home.html)
 
 
 ### knowledge
